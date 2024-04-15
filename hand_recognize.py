@@ -5,7 +5,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 # 이미지 파일의 경우을 사용하세요.:
-IMAGE_FILES = ["americano1.jpg", "americano2.jpg"]
+IMAGE_FILES = ["americano1.jpg"]
 with mp_hands.Hands(
     static_image_mode=True,
     max_num_hands=2,
@@ -36,5 +36,5 @@ with mp_hands.Hands(
           mp_drawing_styles.get_default_hand_landmarks_style(),
           mp_drawing_styles.get_default_hand_connections_style())
     cv2.imwrite(
-    './annotated_image' + str(idx) + '.png', cv2.flip(annotated_image, 1))
+    './annotated_image' + str(idx) + '.png', cv2.flip(annotated_image, 1)) 
 
