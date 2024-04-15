@@ -12,10 +12,10 @@ while True:
         break
 
     cv.imshow('PC_camera', img)
-    if cv.waitKey() == ord('c'):
+    if cv.waitKey(1) == ord('c'):
         img_captured = cv.imwrite(f'img{a}.jpg', img)
         a = a + 1
-    if cv.waitKey() == ord('q'):
+    if cv.waitKey(1) == ord('q'):
         break
 
 cap.release()
