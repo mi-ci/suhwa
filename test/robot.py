@@ -1,35 +1,38 @@
+import sys
+sys.path.append('pingpong')
+from pingpong.pingpongthread import PingPongThread
 import cv2
 import mediapipe as mp
 import numpy as np
 from tensorflow.keras.models import load_model
 
-actions = ['ice', 'hot', 'americano', 'card']
+PingPongThreadInstance = PingPongThread(number=2)
+PingPongThreadInstance.start()
+PingPongThreadInstance.wait_until_full_connect()
+
+actions = ['come', 'away', 'spin']
 seq_length = 30
 
-model = load_model('models/model.keras')
+model = load_model('models/model2_1.0.h5')
 
 # MediaPipe hands model
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 hands = mp_hands.Hands(
-    max_num_hands=2,
+    max_num_hands=1,
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5)
 
 cap = cv2.VideoCapture(0)
 
-# w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-# h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-# fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-# out = cv2.VideoWriter('input.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (w, h))
-# out2 = cv2.VideoWriter('output.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (w, h))
-
 seq = []
 action_seq = []
+last_action = None
 
 while cap.isOpened():
     ret, img = cap.read()
-    img0 = img.copy()
+    if not ret:
+        break
 
     img = cv2.flip(img, 1)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -85,10 +88,24 @@ while cap.isOpened():
             if action_seq[-1] == action_seq[-2] == action_seq[-3]:
                 this_action = action
 
+                if last_action != this_action:
+                    if this_action == 'come':
+                        PingPongThreadInstance.run_motor(1, 5)
+                        PingPongThreadInstance.run_motor(2, -5)
+                    elif this_action == 'away':
+                        PingPongThreadInstance.run_motor(1, -5)
+                        PingPongThreadInstance.run_motor(2, 5)
+                    elif this_action == 'spin':
+                        PingPongThreadInstance.run_motor(1, -5)
+                        PingPongThreadInstance.run_motor(2, -5)
+                    last_action = this_action
+
             cv2.putText(img, f'{this_action.upper()}', org=(int(res.landmark[0].x * img.shape[1]), int(res.landmark[0].y * img.shape[0] + 20)), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(255, 255, 255), thickness=2)
 
-    # out.write(img0)
-    # out2.write(img)
     cv2.imshow('img', img)
     if cv2.waitKey(1) == ord('q'):
         break
+
+PingPongThreadInstance.run_motor(1, 'stop')
+PingPongThreadInstance.run_motor(2, 'stop')
+PingPongThreadInstance.end()
