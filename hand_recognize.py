@@ -36,5 +36,5 @@ with mp_hands.Hands(
           mp_drawing_styles.get_default_hand_landmarks_style(),
           mp_drawing_styles.get_default_hand_connections_style())
     cv2.imwrite(
-    './annotated_image' + str(idx) + '.png', cv2.flip(annotated_image, 1))
+    './annotated_image' + str(idx) + '.png', cv2.flip(annotated_image, 1)) 
 
