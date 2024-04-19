@@ -16,3 +16,22 @@
    경제활동에 활발히 참여하게 되는 시기인 30~54세의 장애인은  2022년도 기준 515,921명으로 전체 인구의 19.4%에 달하는 것으로 확인되었다. 그가운데 취업자 수는 2023년 5월 기준 277,947명으로 확인되어 53.0%의 고용률을 보이고 있다.
    이처럼 장애인들의 점진적인 증가 추세와 이들의 활발한 사회 참여 현상은 장애인이 우리사회의 사회적 존재로서의 명확한 지위를 가지며 사회에 통합되어 살아갈 당위성을 인식하게 한다. 이를 이루기 위해서는 경제적 자립은 매우 중요한 요소라 할 수 있다.
    본 프로젝트를 통하여 청각장애인들이 일반인들과의 의사소통에서의 겪는 어려움을 극복하게 도움을 주기 위한 수화인식 프로그램을 개발하여 이들의 언어 장벽을 극복하게 하고 나아가 청각장애인들의 사회진출에 도움을 주는 효과를 위하여 기획되었다.
+
+
+   import cv2
+from picamera2 import Picamera2
+
+picam2 = Picamera2()
+picam2.preview_configuration.main.size = (800,800)
+picam2.preview_configuration.main.format = "RGB888"
+picam2.preview_configuration.align()
+picam2.configure("preview")
+picam2.start()
+
+while True:
+    im= picam2.capture_array()
+    cv2.imshow("Camera", im)
+    if cv2.waitKey(1)==ord('q'):
+        break
+
+cv2.destroyAllWindows()
