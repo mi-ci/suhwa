@@ -2,9 +2,9 @@ import pyrebase
 
 config = {
     "apiKey": "AIzaSyAEiuF044Rb24Lhkh8xwYZf6MFlDkIleNk",
-    "authDomain": "project-id.firebaseapp.com",
-    "databaseURL": "https://project-id.firebaseio.com",
-    "storageBucket": "project-id.appspot.com"
+    "authDomain": "suhwa-mbc.firebaseapp.com",
+    "databaseURL": "https://suhwa-mbc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "storageBucket": "suhwa-mbc.appspot.com"
 }
 
 firebase = pyrebase.initialize_app(config)
