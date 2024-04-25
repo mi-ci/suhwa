@@ -14,3 +14,4 @@ db = firebase.database()
 sensor_data = db.child("suhwa_data").get()
 for data in sensor_data.each():
     print(data.val())
+    #서버용
