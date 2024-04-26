@@ -25,6 +25,19 @@ def intro():
 
 @app.route("/main")
 def main():
+
+  start_time = time.time()
+
+  remaining = 20
+  while remaining > 0:
+      print("{}초".format(int(remaining)))
+      time.sleep(1)
+      remaining = remaining-1
+      if remaining==0:
+        break
+
+
+
   firebase = pyrebase.initialize_app(config)
   db = firebase.database()
 
@@ -35,7 +48,7 @@ def main():
 
 
 
-  quizlist=["화장실", "가위","무지개","인삼","산","여자","가끔","열아홉","리모컨","싫다"]
+  quizlist=['bathroom', 'scissors',' rainbow', 'ginseng', 'mountain', 'girl','sometimes','nineteen','remote','reject']
   quiz = random.choice(quizlist)
   
  
@@ -73,7 +86,7 @@ def main():
     winsound.Beep(370,500)
 
 
-  return render_template("main.html", value1=result1, value2=score1, value3=score2, value4=player1, value5=player2, value6=quiz, value7=result2)
+  return render_template("main.html", value1=result1, value2=score1, value3=score2, value4=player1, value5=player2, value6=quiz, value7=result2, value8=remaining)
   
 # 화면송출
 @app.route('/video_feed', methods=['POST'])
