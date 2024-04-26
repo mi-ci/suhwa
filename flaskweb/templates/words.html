@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Tourney:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href=" {{ url_for('static', filename='css/words.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    a {
+      color: black; /* 링크 색상 */
+      text-decoration: none; /* 밑줄 없애기 */
+      transition: all 0.3s ease; /* 부드러운 전환 효과 */
+      position: relative; /* 가상 요소의 위치 기준 */
+      padding-left: 50px; /* 텍스트와 오른쪽 경계 사이의 간격 */
+    }
+    /* 가상 요소 초기 숨김 설정 */
+    a::after {
+      content: "사이트로 이동하시겠습니까?"; /* 추가할 텍스트 */
+      color: rgb(75, 75, 75); /* 텍스트 색상 */
+      opacity: 0; /* 초기에는 보이지 않음 */
+      transition: opacity 0.3s ease; /* 페이드 효과로 부드럽게 나타남 */
+      position: absolute; /* 절대 위치 */
+      left: 70px; /* 링크의 왼쪽 경계에서 시작 */
+      white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 */
+      top: 100%; /* 링크의 하단 아래 */
+      margin-top: 5px; /* 링크와 텍스트 사이의 간격 */
+    }
+    /* 링크에 마우스를 올렸을 때의 스타일 */
+    a:hover::after {
+      opacity: 1; /* 마우스 오버 시 화살표가 보이게 설정 */
+    }
+  </style>
+  <body>
+    <script>
+      function openPopup(url) {
+        var width = 600;
+        var height = 400;
+        // 화면 중앙에 위치시키기 위한 좌표 계산
+        var left = window.screenLeft + window.outerWidth / 2 - width / 2;
+        var top = window.screenTop + window.outerHeight / 2 - height / 2;
+
+        // 팝업 옵션 설정
+        var windowFeatures = `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`;
+
+        // 팝업 창 열기
+        var popup = window.open(url, "수화 상세 설명 페이지", windowFeatures);
+
+        // 팝업 차단 확인
+        if (!popup || popup.closed || typeof popup.closed == "undefined") {
+          alert(
+            "팝업 차단이 활성화되어 있습니다. 사이트의 팝업을 허용해주세요."
+          );
+        }
+      }
+    </script>
+    <div class="all">
+      <div class="text">
+        <h1 class="f2">&nbsp; >> Words</h1>
+        <h3 class="f1">
+          <a
+            href="https://sldict.korean.go.kr/front/main/main.do"
+            target="_blank"
+            >«출처 - 국립국어원 학국수어사전»</a
+          >
+        </h3>
+      </div>
+      <div id="wrap">
+        <div class="words">
+          <div id="first">
+            <img
+              src="{{ url_for('static', filename='image/toilet.png') }}"
+              alt="화장실"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=971&top_category=CTE&category=&searchKeyword=%ED%99%94%EC%9E%A5%EC%8B%A4&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              화장실
+            </button>
+          </div>
+          <div id="second">
+            <img
+              src="{{ url_for('static', filename='image/19.png') }}"
+              alt="19"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=11423&top_category=CTE&category=&searchKeyword=%EC%97%B4%EC%95%84%ED%99%89&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              19
+            </button>
+          </div>
+          <div id="third">
+            <img
+              src="{{ url_for('static', filename='image/controller.png') }}"
+              alt="리모컨"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=11060&top_category=CTE&category=&searchKeyword=%EB%A6%AC%EB%AA%A8%EC%BB%A8&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              리모컨
+            </button>
+          </div>
+          <div id="four">
+            <img
+              src="{{ url_for('static', filename='image/hate.png') }}"
+              alt="싫다"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=11998&top_category=CTE&category=&searchKeyword=%EC%8B%AB%EB%8B%A4&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1')"
+            >
+              싫다
+            </button>
+          </div>
+          <div id="five">
+            <img
+              src="{{ url_for('static', filename='image/mountain.png') }}"
+              alt="산"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=9215&top_category=CTE&category=&searchKeyword=%EC%82%B0&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1')"
+            >
+              산
+            </button>
+          </div>
+          <div id="six">
+            <img
+              src="{{ url_for('static', filename='image/inssam.png') }}"
+              alt="인삼"
+              width="129"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191022/630027/MOV000254376_700X466.mp4')"
+            >
+              인삼
+            </button>
+          </div>
+          <div id="seven">
+            <img
+              src="{{ url_for('static', filename='image/rainbow.png') }}"
+              alt="무지개"
+              width="158"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=5344&top_category=CTE&category=&searchKeyword=%EB%AC%B4%EC%A7%80%EA%B0%9C&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              무지개
+            </button>
+          </div>
+          <div id="eight">
+            <img
+              src="{{ url_for('static', filename='image/sometime.png') }}"
+              alt="가끔"
+              width="144"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=12415&top_category=CTE&category=&searchKeyword=%EA%B0%80%EB%81%94&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              가끔
+            </button>
+          </div>
+          <div id="nine">
+            <img
+              src="{{ url_for('static', filename='image/woman.png') }}"
+              alt="여자"
+              width="120"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://www.example1.com')"
+            >
+              여자
+            </button>
+          </div>
+          <div id="ten">
+            <img
+              src="{{ url_for('static', filename='image/vv.png') }}"
+              alt="가위"
+              width="160"
+            />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=6883&top_category=CTE&category=&searchKeyword=%EA%B0%80%EC%9C%84&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0')"
+            >
+              가위
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
