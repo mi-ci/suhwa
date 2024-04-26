@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 actions = ['bathroom', 'scissors',' rainbow', 'ginseng', 'mountain', 'girl','sometimes','nineteen','remote','reject']
 seq_length = 30
 
-model = load_model('models/model.keras')
+model = load_model('models/total_1.keras')
 
 # MediaPipe hands model
 mp_hands = mp.solutions.hands
