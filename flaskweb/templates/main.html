@@ -56,7 +56,9 @@
         </script>
       </div>
 
-      <div id="cam2"></div>
+      <div id="cam2">
+        <img src="/current_frame" alt="Video stream" id="videoframe" />
+      </div>
 
       <div id="footer" class="head">
         <h1 class="f2">SCORE {{value2}}</h1>
@@ -74,8 +76,6 @@
       <h1>문제는:{{value6}}</h1>
 
     <div id="fileContents"></div>-->
-
-    <h1>제한시간은?:{{value8}}</h1>
 
     <script>
       setTimeout("location.reload()", 20 * 1000);
