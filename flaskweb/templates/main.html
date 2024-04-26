@@ -22,11 +22,29 @@
     />
   </head>
   <body>
+    <div id="timer"></div>
+    <script>
+      var seconds = 20;
+      var timerDisplay = document.getElementById("timer");
+      setInterval(function () {
+        timerDisplay.innerHTML = seconds + "초";
+        seconds--;
+        if (seconds < 0) {
+          clearInterval();
+          timerDisplay.innerHTML = "시간 종료";
+        }
+      }, 1000);
+    </script>
+
     <div class="box">
       <div class="inner-box">
+<<<<<<< HEAD
         <h1 class="f1" src="{{ url_for('static', filename='box.png') }}">
           {{value6}}
         </h1>
+=======
+        <h1 class="f1" src="../image/box.png">{{value6}}</h1>
+>>>>>>> fbefca7af61cc845772a06866972e5a7d60d9706
       </div>
     </div>
     <div id="wrap">
@@ -63,6 +81,8 @@
       <h1>문제는:{{value6}}</h1>
 
     <div id="fileContents"></div>-->
+
+    <h1>제한시간은?:{{value8}}</h1>
 
     <script>
       setTimeout("location.reload()", 20 * 1000);
