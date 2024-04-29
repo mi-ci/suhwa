@@ -1,3 +1,63 @@
+<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 HB 입니다</h1>
+<p align="center">
+  <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=배은영;김현희;안윤이;도규림;장우진&center=true&width=700&height=70"></a>
+</p>
+
+<!-- About Section -->
+ # About Us
+ 
+<p>
+ <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
+  
+ ✌️ &emsp; MBC아카데미에서 만났습니다 <br/><br/>
+ ❤️ &emsp; 컴퓨터를 사랑하는 5인입니다<br/><br/>
+ 📧 &emsp; 언제든 연락주세요: stormeight@naver.com<br/><br/>
+ 💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/project-HB/issues)
+
+</p>
+
+<br/>
+<br/>
+
+## 언어
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+<br/>
+<br/>
+
+## 라이브러리
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-mediapipe-blue)
+<br/>
+<br/>
+## 프레임워크
+
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+<br/>
+<br/>
+
+## ETC
+
+![Static Badge](https://img.shields.io/badge/-Rpi4-red)
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. 본 프로젝트 연구의 필요성 및 목적
 
    의사소통은 인간이 사회생활을 하기 위해서 가장 필수적으로 가지고 있어야 하는 능력으로 사람의 의사나 감정의 소통으로‘가지고 있는 생각이나 뜻이 서로 통함’이라는 의미를 지니고 있다. 상호간 소통을 위해서 사용되는 비언어적 요소들까지 포함이 된다. 하지만 농인들은 말하지 못하고 듣지 못하는 점이 의사소통에 있어서 걸림돌이 되기 때문에 많은 시간과 노력을 들여가며 수화를 배워 타인과 소통하려고 노력한다.
