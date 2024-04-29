@@ -2,6 +2,7 @@
 <p align="center">
   <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=배은영;임유나;도규림;임태창;장우진;변우성;&center=true&width=700&height=70"></a>
   <img src="https://i.imgur.com/9WG7R5G.jpeg">
+  <img src="https://i.imgur.com/xjeaL4Q.jpeg">
 </p>
 
 
