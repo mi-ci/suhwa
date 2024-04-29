@@ -15,8 +15,8 @@ video = cv2.VideoCapture(0)
 
 seq_length = 30
 data = []
-action = "rainbow"
-a=1
+action = "reject"
+a=9
 #학습시킬 action 
 #[bathroom, scissors, rainbow, ginseng, mountain, girl, sometimes, nineteen, remote, reject]
 
