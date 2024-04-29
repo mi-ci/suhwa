@@ -22,49 +22,54 @@
     />
   </head>
   <body>
-    <div id="timer"></div>
-    <script>
-      var seconds = 20;
-      var timerDisplay = document.getElementById("timer");
-      setInterval(function () {
-        timerDisplay.innerHTML = seconds + "초";
-        seconds--;
-        if (seconds < 0) {
-          clearInterval();
-          timerDisplay.innerHTML = "시간 종료";
-        }
-      }, 1000);
-    </script>
-
     <div class="box">
       <div class="inner-box">
-<<<<<<< HEAD
         <h1 class="f1" src="{{ url_for('static', filename='box.png') }}">
           {{value6}}
         </h1>
-=======
-        <h1 class="f1" src="../image/box.png">{{value6}}</h1>
->>>>>>> fbefca7af61cc845772a06866972e5a7d60d9706
       </div>
     </div>
     <div id="wrap">
       <div id="header" class="head">
         <h1 class="f2">Player1</h1>
-        <h1 class="f1">남은 시간: {{value 8}}</h1>
+        <h1 class="f1"><div id="f4"></div></h1>
         <h1 class="f2">Player2</h1>
       </div>
       <div id="cam1">
         <img src="/current_frame" alt="Video stream" id="videoframe" />
         <script>
+          function countdown() {
+            var seconds = 60;
+            var timerDisplay = document.getElementById("f4");
+            var intervalId = setInterval(function () {
+              timerDisplay.innerHTML = "제한시간: " + seconds + "초";
+              seconds--;
+
+              if (seconds < 0) {
+                clearInterval(intervalId);
+                timerDisplay.innerHTML = "세션종료";
+                history.go(0);
+              }
+            }, 1000);
+          }
+
+          // Call the countdown function initially
+          countdown();
+
+          // Reload the image every 100 milliseconds
           var img = document.getElementById("videoframe");
           setInterval(function () {
             img.src = "/current_frame?" + new Date().getTime();
-          }, 100); // Reloads the image every 100 milliseconds
+          }, 1000);
+          var img2 = document.getElementById("videoframe2");
+          setInterval(function () {
+            img2.src = "/current_frame2?" + new Date().getTime();
+          }, 1000);
         </script>
       </div>
 
       <div id="cam2">
-        <img src="/current_frame" alt="Video stream" id="videoframe" />
+        <img src="/current_frame2" alt="Video stream" id="videoframe2" />
       </div>
 
       <div id="footer" class="head">
@@ -74,6 +79,8 @@
         <!--플레이어2 점수 -->
       </div>
     </div>
+    <h1>맞췄을때 문제변화:{{value6}}</h1>
+
     <!--<h1>결과는?{{value1}}</h1>
       <h1>결과는?{{value7}}</h1>
       
@@ -83,9 +90,5 @@
       <h1>문제는:{{value6}}</h1>
 
     <div id="fileContents"></div>-->
-
-    <script>
-      setTimeout("location.reload()", 20 * 1000);
-    </script>
   </body>
 </html>
