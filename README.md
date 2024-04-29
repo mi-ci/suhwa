@@ -31,7 +31,7 @@
 
 
 <h2 align="center">
-  Minimap
+  헬로수화 (수화 교육용 앱)
 </h2>
 
 <table align="center" border="0">
