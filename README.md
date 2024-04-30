@@ -139,6 +139,8 @@
       </p>
     </td>
     <td>
+  </tr>   
+  <tr>
 A routine is a user-created CSV file that tells Auto Maple where to move and what commands to use at each location. A custom compiler within Auto Maple parses through the selected routine and converts it into a list of <code>Component</code> objects that can then be executed by the program. An error message is printed for every line that contains invalid parameters, and those lines are ignored during the conversion. 
 <br><br>
 Below is a summary of the most commonly used routine components:
