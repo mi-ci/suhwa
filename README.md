@@ -135,7 +135,7 @@
         <img src="https://i.imgur.com/ZMrYb0h.png"/>
         <br>
         <sub>
-          Click <a href="https://github.com/mi-ci/suhwa/blob/main/modeling/train.ipynb">여기</a> 를 눌러 전체코드를 확인하세요.
+          <a href="https://github.com/mi-ci/suhwa/blob/main/modeling/train.ipynb">여기</a> 를 눌러 전체코드를 확인하세요.
         </sub>
       </p>
     </td>
@@ -152,7 +152,7 @@
 아래는 우리의 수화 인식 모델 학습에 사용된 층이고 채택 이유이다:
 <ul>
   <li>
-    <b><code>LSTM</code></b> 수화는 제스쳐로 이루어져있으므로 제스쳐를 인식하기 위해 우리는 데이터셋은 여러개의 Sequence로 만들었다(각 Sequence는 30프레임). 첫번째 LSTM층에 128유닛을 주어 우리의 데이터셋을 input을 받는다. 두번째 LSTM층은 64유닛을 주어 보다 input을 받은 값을 보다 정밀하게 학습한다. 
+    <b><code>LSTM</code></b> 수화는 제스쳐로 이루어져있으므로 제스쳐를 인식하기 위해 우리의 데이터셋은 30프레임의 Sequence로 만들어졌다. 첫번째 LSTM층에 128유닛을 주어 우리의 데이터셋을 input을 받는다. 두번째 LSTM층은 64유닛을 주어 보다 input을 받은 값을 보다 정밀하게 학습한다.
   </li>
       <li>
         <code>BatchNormalization</code> 첫번째 LSTM input layer에서 받은 수화 시퀀스들을 정규화 해줌으로써 텐서플로우가 학습을 더 빠르고 효율적으로 할 수 있게 해주었다.
