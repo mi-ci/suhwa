@@ -90,6 +90,7 @@
 
 <p align="center">
   <img src="https://i.imgur.com/SeeP7Ot.gif" width="1000px"/>
+  <br>
   <sub>
     2명의 사용자가 퀴즈대결을 하고 있는 화면이다
   </sub>
