@@ -170,24 +170,6 @@
 
 
 
-
-<h2 align="center">
-  Runes
-</h2>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/69165598/123479558-f61fad00-d5b5-11eb-914c-8f002a96dd62.gif" width="100%"/>
-</p>
-
-<table align="center" border="0">
-  <tr>
-    <td width="100%">
-Auto Maple has the ability to automatically solve "runes", or in-game arrow key puzzles. It first uses OpenCV's color filtration and <b>Canny edge detection</b> algorithms to isolate the arrow keys and reduce as much background noise as possible. Then, it runs multiple inferences on the preprocessed frames using a custom-trained <b>TensorFlow</b> model until two inferences agree. Because of this preprocessing, Auto Maple is extremely accurate at solving runes in all kinds of (often colorful and chaotic) environments.
-    </td>
-  </tr>
-</table>
-
-
 <br>
 
 
