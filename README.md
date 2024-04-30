@@ -102,11 +102,11 @@
 
 
 <h2 align="center">
-  Command Books
+  인트로
 </h2>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/69165598/123372905-502e5d00-d539-11eb-81c2-46b8bbf929cc.gif" width="100%"/>
+  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
   <br>
   <sub>
     홈페이지의 메인 화면 모습이다. 수화를 접할 수 있는 다양한 메뉴들이 있다.
