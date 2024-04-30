@@ -56,7 +56,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/qv6Uu72.png" width="100%"/>
+  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
   <br>
   <sub>
     홈페이지의 메인 화면 모습이다. 수화를 접할 수 있는 다양한 메뉴들이 있다.
@@ -84,7 +84,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
+  <img src="https://i.imgur.com/qv6Uu72.png" width="100%"/>
   <br>
   <sub>
     2명의 사용자가 퀴즈대결을 하고 있는 화면이다
