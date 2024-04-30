@@ -259,7 +259,7 @@ Auto Maple has the ability to automatically solve "runes", or in-game arrow key 
 <p>
  <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
   
- ✌️ &emsp;  MBC아카데미에서 만났습니다 <br/><br/>
+ ✌️ &emsp;  &nbsp;MBC아카데미에서 만났습니다 <br/><br/>
  ❤️ &emsp; 인공지능을 사랑하는 5인입니다<br/><br/>
  📧 &emsp; 언제든 연락주세요: <br>
  💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/suhwa/issues)
