@@ -119,7 +119,7 @@
 
 
 <h2 align="center">
-  Routines
+  주요 코드
 </h2>
 
 <table align="center" border="0">
