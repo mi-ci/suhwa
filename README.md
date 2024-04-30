@@ -143,21 +143,21 @@
 </table>
 <table align="center" border="0">
   <tr>
-A routine is a user-created CSV file that tells Auto Maple where to move and what commands to use at each location. A custom compiler within Auto Maple parses through the selected routine and converts it into a list of <code>Component</code> objects that can then be executed by the program. An error message is printed for every line that contains invalid parameters, and those lines are ignored during the conversion. 
+    수화 인식은 
 <br><br>
 Below is a summary of the most commonly used routine components:
 <ul>
   <li>
-    <b><code>Point</code></b> stores the commands directly below it and will execute them in that order once the character is within <code>move_tolerance</code> of the specified location. There are also a couple optional keyword arguments:
+    <b><code>LSTM</code></b> 수화는 제스쳐로 이루어져있으므로 제스쳐를 인식하기 위해 우리는 데이터셋은 여러개의 Sequence로 만들었다(각 Sequence는 30프레임). 첫번째 LSTM층에 128유닛을 주어 우리의 데이터셋을 input을 받는다. 두번째 LSTM층은 64유닛을 주어 보다 input을 받은 값을 보다 정밀하게 학습한다. 
     <ul>
       <li>
-        <code>adjust</code> fine-tunes the character's position to be within <code>adjust_tolerance</code> of the target location before executing any commands.
+        <code>BatchNormalization</code> 첫번째 LSTM input layer에서 받은 수화 시퀀스들을 정규화 해줌으로써 텐서플로우가 학습을 더 빠르고 효율적으로 할 수 있게 해주었다.
       </li>
       <li>
-        <code>frequency</code> tells the Point how often to execute. If set to N, this Point will execute once every N iterations.
+        <code>Dense</code> relu 함수를 써서 데이터가 선형으로 가는 것을 방지 하였고 Dense로 LSTM에서 받은 수화 시퀀스들을 분류하기 시작한다. 마지막 Dense층은 softmax 함수를 사용해 각각 수화의 확률값을 분류해주었다.
       </li>
       <li>
-        <code>skip</code> tells the Point whether to run on the first iteration or not. If set to True and frequency is N, this Point will execute on the N-1th iteration.
+        <code>Dropuot</code> 여러 사람이 녹화한 수화 데이터셋은 제스쳐들이 가지각색이므로 오버핏은 과대적합으로 이어질 수 있다. 방지하기 위해 50%를 드롭아웃 해주었다.
       </li>
     </ul>
   </li>
