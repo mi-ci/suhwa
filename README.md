@@ -1,8 +1,8 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
 <p align="center">
-  <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=유나;은영;규림;태창;우진;우성;&center=true&width=700&height=70"></a>
-  <img src="https://i.imgur.com/9WG7R5G.jpeg">
-  <img src="https://i.imgur.com/xjeaL4Q.jpeg">
+  <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=유나;<img src="https://i.imgur.com/xjeaL4Q.jpeg">은영;규림;태창;<img src="https://i.imgur.com/9WG7R5G.jpeg">우진;우성;&center=true&width=700&height=70"></a>
+  
+  
 </p>
 
 <br/>
