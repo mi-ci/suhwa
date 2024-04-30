@@ -108,7 +108,7 @@
   <img src="https://user-images.githubusercontent.com/69165598/123372905-502e5d00-d539-11eb-81c2-46b8bbf929cc.gif" width="100%"/>
   <br>
   <sub>
-    The above video shows Auto Maple consistently performing a mechanically advanced ability combination.
+    홈페이지의 메인 화면 모습이다. 수화를 접할 수 있는 다양한 메뉴들이 있다.
   </sub>
 </p>
   
