@@ -6,6 +6,7 @@ import winsound
 import threading
 import time
 
+
 app = Flask(__name__)
 
 score1 = 0
@@ -41,6 +42,18 @@ def check_timeout():
 @app.route("/")
 def intro():
     return render_template("intro.html")
+
+@app.route("/words")
+def words():  
+    return render_template("words.html")   
+
+@app.route("/help")
+def help():  
+    return render_template("help.html")     
+
+
+
+
 
 @app.route("/main")
 def main():
@@ -104,3 +117,4 @@ def current_frame2():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, threaded=True)
+

@@ -48,6 +48,11 @@
   </head>
 
   <body>
+    <script>
+      function clos() {
+        window.close();
+      }
+    </script>
     <div class="contain">
       <div class="container">
         <img
@@ -55,15 +60,13 @@
           alt="브이"
           width="90"
         />
-        <h1 class="f3" style="font-size: 90px">
-          (교육용) 수어 학습 어플리케이션
-        </h1>
+        <h1 class="f3" style="font-size: 90px">헬로 수어</h1>
       </div>
       <div class="contain">
         <h2 style="font-size: 50px"><a href="./main"> Quiz Start</a></h2>
         <h2 style="font-size: 50px"><a href="./help"> How To Play</a></h2>
         <h2 style="font-size: 50px"><a href="./words"> Dictionary</a></h2>
-        <h2 style="font-size: 50px"><a href="./end"> Exit</a></h2>
+        <h2 style="font-size: 50px"><a onclick="clos()"> Exit</a></h2>
       </div>
     </div>
   </body>
