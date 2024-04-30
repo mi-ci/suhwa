@@ -96,7 +96,7 @@
   
 <table align="center" border="0">
   <tr>
-    <td width="100%">
+    <td width="1000px">
       <b><code>Player</code></b> 플레이어명을 표시해준다.
       <br>
       <b><code>Score</code></b> 플레이어의 점수를 표시해준다.
@@ -167,61 +167,6 @@
 </ul>
     </td>
 </table>
-
-<br>
-<h2 align="center">
-  예측
-</h2>
-
-<table align="center" border="0">
-  <tr>
-    <td width="350px">
-      <p align="center">
-        <img src="https://user-images.githubusercontent.com/69165598/150469699-d8a94ab4-7d70-49c3-8736-a9018996f39a.png"/>
-        <br>
-        <sub>
-          Click <a href="https://github.com/tanjeffreyz02/auto-maple/blob/f13d87c98e9344e0a4fa5c6f85ffb7e66860afc0/routines/dcup2.csv">here</a> to view the entire routine.
-        </sub>
-      </p>
-    </td>
-    <td>
-A routine is a user-created CSV file that tells Auto Maple where to move and what commands to use at each location. A custom compiler within Auto Maple parses through the selected routine and converts it into a list of <code>Component</code> objects that can then be executed by the program. An error message is printed for every line that contains invalid parameters, and those lines are ignored during the conversion. 
-<br><br>
-Below is a summary of the most commonly used routine components:
-<ul>
-  <li>
-    <b><code>Point</code></b> stores the commands directly below it and will execute them in that order once the character is within <code>move_tolerance</code> of the specified location. There are also a couple optional keyword arguments:
-    <ul>
-      <li>
-        <code>adjust</code> fine-tunes the character's position to be within <code>adjust_tolerance</code> of the target location before executing any commands.
-      </li>
-      <li>
-        <code>frequency</code> tells the Point how often to execute. If set to N, this Point will execute once every N iterations.
-      </li>
-      <li>
-        <code>skip</code> tells the Point whether to run on the first iteration or not. If set to True and frequency is N, this Point will execute on the N-1th iteration.
-      </li>
-    </ul>
-  </li>
-  <li>
-    <b><code>Label</code></b> acts as a reference point that can help organize the routine into sections as well as create loops.
-  </li>
-  <li>
-    <b><code>Jump</code></b> jumps to the given label from anywhere in the routine.
-  </li>
-  <li>
-    <b><code>Setting</code></b> updates the specified setting to the given value. It can be placed anywhere in the routine, so different parts of the same routine can have different settings. All editable settings can be found at the bottom of <a href="https://github.com/tanjeffreyz02/auto-maple/blob/v2/settings.py">settings.py</a>.
-  </li>
-</ul>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-
-
-
 
 
 
