@@ -82,8 +82,7 @@
 <table align="center" border="0">
   <tr>
     <td>
-- 프로젝트 적용 장소: (농인이 운영하는) 카페 사업장
-- 프로젝트 적용 대상: 청각장애인 바리스타
+      청각장애인들이 일반인들과의 의사소통에서의 겪는 어려움을 극복하게 도움을 주기 위한 수화인식 프로그램을 개발하였다!
     </td>
     <td align="center" width="400px">
       <img align="center" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanl2NGh4YWo4bXY2bjk5djBzOHcwdmVvN2E0Z3B4em9zenV0d2h6YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CoTHTNblovkG8wHXf4/giphy.gif"/>
