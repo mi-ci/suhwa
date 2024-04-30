@@ -89,7 +89,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/qv6Uu72.png" width="1000px"/>
+  <img src="https://i.imgur.com/MaC7mQT.gif" width="1000px"/>
   <sub>
     2명의 사용자가 퀴즈대결을 하고 있는 화면이다
   </sub>
