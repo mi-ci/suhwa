@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
+![image](https://github.com/mi-ci/suhwa/assets/73093748/5161ce44-7fc0-4fea-8480-098bf0af82da)<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
 <p align="center">
   <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=유나;은영;규림;태창;우진;우성;&center=true&width=700&height=70"></a>
   <br>
@@ -33,10 +33,13 @@
     <td>
       <ul>
         <li>
-          청각장애인들의 의사소통률 제고
+          수화 배우는 것을 재밌게!
         </li>
         <li>
-          극복하게 도움을 주기 위한 수화인식 프로그램을 개발하였다!
+          놀이하듯이 쉽게!
+        </li>
+        <li>
+          청각장애인과 일반인 간의 소통 제고!
         </li>
       </ul>
     </td>
@@ -111,7 +114,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/7rat2Ck.png" width="100%"/>
+  <https://i.imgur.com/tPNdXDH.png" width="100%"/>
   <sub>
     현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
   </sub>
