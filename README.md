@@ -62,7 +62,7 @@
   
 <table align="center" border="0">
   <tr>
-    <td width="300px">
+    <td width="1000px">
       <b><code>Quiz Start</code></b> 퀴즈 화면으로 넘어간다.
       <br>
       <b><code>How to play</code></b> 설명 화면으로 넘어간다.
