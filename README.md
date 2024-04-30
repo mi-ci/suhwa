@@ -114,7 +114,7 @@
 </h2>
 
 <p align="center">
-  <https://i.imgur.com/tPNdXDH.png" width="100%"/>
+  <img src="https://i.imgur.com/tPNdXDH.png" width="100%"/>
   <sub>
     현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
   </sub>
