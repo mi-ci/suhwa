@@ -78,6 +78,34 @@
   
 <br>
 
+<h2 align="center">
+  퀴즈
+</h2>
+
+<p align="center">
+  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
+  <br>
+  <sub>
+    2명의 사용자가 퀴즈대결을 하고 있는 화면이다
+  </sub>
+</p>
+  
+<table align="center" border="0">
+  <tr>
+    <td width="100%">
+      <b><code>Quiz Start</code></b> 퀴즈 화면으로 넘어간다.
+      <br>
+      <b><code>How to play</code></b> 설명 화면으로 넘어간다.
+      <br>
+      <b><code>Dictionary</code></b> 단어장 화면으로 넘어간다.
+      <br>
+      <b><code>Exit</code></b> 앱을 종료한다.
+    </td>
+  </tr>
+</table>
+  
+<br>
+
 
 
 
