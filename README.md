@@ -173,7 +173,7 @@ Below is a summary of the most commonly used routine components:
 
 <br>
 <h2 align="center">
-  모델링
+  예측
 </h2>
 
 <table align="center" border="0">
