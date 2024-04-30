@@ -129,7 +129,7 @@
 
 <table align="center" border="0">
   <tr>
-    <td width="350px">
+    <td width="1000px">
       <p align="center">
         <img src="https://i.imgur.com/ZMrYb0h.png"/>
         <br>
