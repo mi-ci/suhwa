@@ -61,8 +61,11 @@
   <tr>
     <td width="100%">
       <b><code>Quiz Start</code></b> 퀴즈 화면으로 넘어간다.
+      <br>
       <b><code>How to play</code></b> 설명 화면으로 넘어간다.
+      <br>
       <b><code>Dictionary</code></b> 단어장 화면으로 넘어간다.
+      <br>
       <b><code>Exit</code></b> 앱을 종료한다.
     </td>
   </tr>
