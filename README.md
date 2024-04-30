@@ -83,7 +83,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/qv6Uu72.png" width="100%"/>
+  <img src="https://i.imgur.com/qv6Uu72.png" width="1000px"/>
   <sub>
     2명의 사용자가 퀴즈대결을 하고 있는 화면이다
   </sub>
@@ -92,13 +92,11 @@
 <table align="center" border="0">
   <tr>
     <td width="100%">
-      <b><code>Quiz Start</code></b> 퀴즈 화면으로 넘어간다.
+      <b><code>Player</code></b> 플레이어명을 표시해준다.
       <br>
-      <b><code>How to play</code></b> 설명 화면으로 넘어간다.
+      <b><code>Score</code></b> 플레이어의 점수를 표시해준다.
       <br>
-      <b><code>Dictionary</code></b> 단어장 화면으로 넘어간다.
-      <br>
-      <b><code>Exit</code></b> 앱을 종료한다.
+      <b><code>Camera</code></b> 플레이어의 라즈베리 카메라 화면을 표시해준다.
     </td>
   </tr>
 </table>
