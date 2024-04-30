@@ -131,10 +131,10 @@
   <tr>
     <td width="350px">
       <p align="center">
-        <img src="https://user-images.githubusercontent.com/69165598/150469699-d8a94ab4-7d70-49c3-8736-a9018996f39a.png"/>
+        <img src="https://i.imgur.com/ZMrYb0h.png"/>
         <br>
         <sub>
-          Click <a href="https://github.com/tanjeffreyz02/auto-maple/blob/f13d87c98e9344e0a4fa5c6f85ffb7e66860afc0/routines/dcup2.csv">here</a> to view the entire routine.
+          Click <a href="https://github.com/mi-ci/suhwa/blob/main/modeling/train.ipynb">여기</a> 를 눌러 전체코드를 확인하세요.
         </sub>
       </p>
     </td>
