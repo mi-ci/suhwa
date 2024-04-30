@@ -61,7 +61,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
+  <img src="https://i.imgur.com/fxU5Jgw.gif" width="100%"/>
   <sub>
     홈페이지의 메인 화면 모습이다. 수화를 접할 수 있는 다양한 메뉴들이 있다.
   </sub>
@@ -114,7 +114,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/tPNdXDH.png" width="100%"/>
+  <img src="https://i.imgur.com/oIwBAFr.gif" width="100%"/>
   <sub>
     현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
   </sub>
@@ -196,66 +196,13 @@ Auto Maple has the ability to automatically solve "runes", or in-game arrow key 
 
 
 
-
-
-<h2 align="center">
-  Video Demonstration
-</h2>
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=qs8Nw55edhg"><b>Click below to watch the full video</b></a>
-</p>
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=qs8Nw55edhg">
-    <img src="https://user-images.githubusercontent.com/69165598/123308656-c5b61100-d4d8-11eb-99ac-c465665474b5.gif" width="600px"/>
-  </a>
-</p>
-
-<br>
-
-
-
-<h2 align="center">
-  Setup
-</h2>
-
-<ol>
-  <li>
-    Download and install <a href="https://www.python.org/downloads/">Python3</a>.
-  </li>
-  <li>
-    Download and install the latest version of <a href="https://developer.nvidia.com/cuda-downloads">CUDA Toolkit</a>.
-  </li>
-  <li>
-    Download and install <a href="https://git-scm.com/download/win">Git</a>.
-  </li>
-  <li>
-    Download and unzip the latest <a href="https://github.com/tanjeffreyz02/auto-maple/releases">Auto Maple release</a>.
-  </li>
-  <li>
-    Download the <a href="https://drive.google.com/drive/folders/1SPdTNF4KZczoWyWTgfyTBRvLvy7WSGpu?usp=sharing">TensorFlow model</a> and unzip the "models" folder into Auto Maple's "assets" directory.
-  </li>
-  <li>
-    Inside Auto Maple's main directory, open a command prompt and run:
-    <pre><code>python -m pip install -r requirements.txt</code></pre>
-  </li>
-  <li>
-    Lastly, create a desktop shortcut by running:
-    <pre><code>python setup.py</code></pre>
-    This shortcut uses absolute paths, so feel free to move it wherever you want. However, if you move Auto Maple's main directory, you will need to run <code>python setup.py</code> again to generate a new shortcut. To keep the command prompt open after Auto Maple closes, run the above command with the <code>--stay</code> flag.
-  </li>
-</ol>
-
-
-
 <!-- About Section -->
  # About Us
  
 <p>
  <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
   
- ✌️ &emsp;  &nbsp;MBC아카데미에서 만났습니다 <br/><br/>
+ ✌️ &emsp;  &nbsp;&nbsp;MBC아카데미에서 만났습니다 <br/><br/>
  ❤️ &emsp; 인공지능을 사랑하는 5인입니다<br/><br/>
  📧 &emsp; 언제든 연락주세요: <br>
  💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/suhwa/issues)
