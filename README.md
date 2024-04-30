@@ -149,7 +149,7 @@ Below is a summary of the most commonly used routine components:
 <ul>
   <li>
     <b><code>LSTM</code></b> 수화는 제스쳐로 이루어져있으므로 제스쳐를 인식하기 위해 우리는 데이터셋은 여러개의 Sequence로 만들었다(각 Sequence는 30프레임). 첫번째 LSTM층에 128유닛을 주어 우리의 데이터셋을 input을 받는다. 두번째 LSTM층은 64유닛을 주어 보다 input을 받은 값을 보다 정밀하게 학습한다. 
-    <ul>
+  </li>
       <li>
         <code>BatchNormalization</code> 첫번째 LSTM input layer에서 받은 수화 시퀀스들을 정규화 해줌으로써 텐서플로우가 학습을 더 빠르고 효율적으로 할 수 있게 해주었다.
       </li>
@@ -159,15 +159,6 @@ Below is a summary of the most commonly used routine components:
       <li>
         <code>Dropuot</code> 여러 사람이 녹화한 수화 데이터셋은 제스쳐들이 가지각색이므로 오버핏은 과대적합으로 이어질 수 있다. 방지하기 위해 50%를 드롭아웃 해주었다.
       </li>
-    </ul>
-  </li>
-  <li>
-    <b><code>Label</code></b> acts as a reference point that can help organize the routine into sections as well as create loops.
-  </li>
-  <li>
-    <b><code>Jump</code></b> jumps to the given label from anywhere in the routine.
-  </li>
-  <li>
     <b><code>Setting</code></b> updates the specified setting to the given value. It can be placed anywhere in the routine, so different parts of the same routine can have different settings. All editable settings can be found at the bottom of <a href="https://github.com/tanjeffreyz02/auto-maple/blob/v2/settings.py">settings.py</a>.
   </li>
 </ul>
