@@ -86,7 +86,7 @@
 - 프로젝트 적용 대상: 청각장애인 바리스타
     </td>
     <td align="center" width="400px">
-      <img align="center" src="https://user-images.githubusercontent.com/69165598/123177212-b16f0700-d439-11eb-8a21-8b414273f1e1.gif"/>
+      <img align="center" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanl2NGh4YWo4bXY2bjk5djBzOHcwdmVvN2E0Z3B4em9zenV0d2h6YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CoTHTNblovkG8wHXf4/giphy.gif"/>
     </td>
   </tr>
 </table>
