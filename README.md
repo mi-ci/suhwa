@@ -5,63 +5,7 @@
   <img src="https://i.imgur.com/xjeaL4Q.jpeg">
 </p>
 
-
-<!-- About Section -->
- # About Us
- 
-<p>
- <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
-  
- ✌️ &emsp;  MBC아카데미에서 만났습니다 <br/><br/>
- ❤️ &emsp; 인공지능을 사랑하는 5인입니다<br/><br/>
- 📧 &emsp; 언제든 연락주세요: stormeight@naver.com<br/><br/>
- 💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/suhwa/issues)
-
-</p>
-
 <br/>
-<br/>
-
-## 언어
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-<br/>
-<br/>
-
-## 라이브러리
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-![Static Badge](https://img.shields.io/badge/-mediapipe-blue)
-<br/>
-<br/>
-## 프레임워크
-
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-<br/>
-<br/>
-
-## ETC
-
-![Static Badge](https://img.shields.io/badge/-Rpi4-red)
-
-<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h1 align="center">
   헬로수화
@@ -264,3 +208,47 @@ Auto Maple has the ability to automatically solve "runes", or in-game arrow key 
     This shortcut uses absolute paths, so feel free to move it wherever you want. However, if you move Auto Maple's main directory, you will need to run <code>python setup.py</code> again to generate a new shortcut. To keep the command prompt open after Auto Maple closes, run the above command with the <code>--stay</code> flag.
   </li>
 </ol>
+
+
+
+<!-- About Section -->
+ # About Us
+ 
+<p>
+ <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
+  
+ ✌️ &emsp;  MBC아카데미에서 만났습니다 <br/><br/>
+ ❤️ &emsp; 인공지능을 사랑하는 5인입니다<br/><br/>
+ 📧 &emsp; 언제든 연락주세요: stormeight@naver.com<br/><br/>
+ 💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/suhwa/issues)
+
+</p>
+
+<br/>
+<br/>
+
+## 언어
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+<br/>
+<br/>
+
+## 라이브러리
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-mediapipe-blue)
+<br/>
+<br/>
+## 프레임워크
+
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+<br/>
+<br/>
+
+## ETC
+
+![Static Badge](https://img.shields.io/badge/-Rpi4-red)
+
+
