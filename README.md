@@ -1,4 +1,4 @@
-![image](https://github.com/mi-ci/suhwa/assets/73093748/862ee0a8-9dc2-46a2-8c5f-d24a6cceb0bc)![image](https://github.com/mi-ci/suhwa/assets/73093748/1b74936b-94e0-432b-9ec7-5f7130572b2a)<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
 <p align="center">
   <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=유나;은영;규림;태창;우진;우성;&center=true&width=700&height=70"></a>
   <br>
