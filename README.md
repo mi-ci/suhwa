@@ -49,8 +49,6 @@
 
 
 
-
-
 <h2 align="center">
   인트로
 </h2>
@@ -106,7 +104,16 @@
 <br>
 
 
+<h2 align="center">
+  사전
+</h2>
 
+<p align="center">
+  <img src="https://i.imgur.com/qv6Uu72.png" width="100%"/>
+  <sub>
+    현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
+  </sub>
+</p>
 
 
 
