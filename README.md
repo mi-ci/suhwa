@@ -159,8 +159,7 @@ Below is a summary of the most commonly used routine components:
       <li>
         <code>Dropuot</code> 여러 사람이 녹화한 수화 데이터셋은 제스쳐들이 가지각색이므로 오버핏은 과대적합으로 이어질 수 있다. 방지하기 위해 50%를 드롭아웃 해주었다.
       </li>
-    <b><code>Setting</code></b> updates the specified setting to the given value. It can be placed anywhere in the routine, so different parts of the same routine can have different settings. All editable settings can be found at the bottom of <a href="https://github.com/tanjeffreyz02/auto-maple/blob/v2/settings.py">settings.py</a>.
-  </li>
+
 </ul>
     </td>
 </table>
