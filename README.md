@@ -108,21 +108,6 @@
   
 <br>
 
-
-<h2 align="center">
-  사전
-</h2>
-
-<p align="center">
-  <img src="https://i.imgur.com/oIwBAFr.gif" width="100%"/>
-  <sub>
-    현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
-  </sub>
-</p>
-
-
-
-
 <h2 align="center">
   모델링
 </h2>
@@ -167,6 +152,24 @@
 </ul>
     </td>
 </table>
+
+<br>
+
+
+<h2 align="center">
+  사전
+</h2>
+
+<p align="center">
+  <img src="https://i.imgur.com/oIwBAFr.gif" width="100%"/>
+  <sub>
+    현재 헬로수화에서 저장하고 있는 단어 Glossary다. 귀여운 보노보노는 덤이다.
+  </sub>
+</p>
+
+
+
+
 
 
 
