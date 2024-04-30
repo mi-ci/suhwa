@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
+![image](https://github.com/mi-ci/suhwa/assets/73093748/862ee0a8-9dc2-46a2-8c5f-d24a6cceb0bc)![image](https://github.com/mi-ci/suhwa/assets/73093748/1b74936b-94e0-432b-9ec7-5f7130572b2a)<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> 프로젝트 헬로수화</h1>
 <p align="center">
   <a href="https://github.com/Ratheshan03/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=유나;은영;규림;태창;우진;우성;&center=true&width=700&height=70"></a>
   <br>
@@ -31,9 +31,10 @@
         <li>
           청각장애인들의 의사소통률 제고
         </li>
+        <li>
+          극복하게 도움을 주기 위한 수화인식 프로그램을 개발하였다!
+        </li>
       </ul>
-      <br>
-      극복하게 도움을 주기 위한 수화인식 프로그램을 개발하였다!
     </td>
     <td align="center" width="400px">
       <img align="center" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanl2NGh4YWo4bXY2bjk5djBzOHcwdmVvN2E0Z3B4em9zenV0d2h6YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CoTHTNblovkG8wHXf4/giphy.gif"/>
@@ -55,7 +56,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://i.imgur.com/eP37J2N.png" width="100%"/>
+  <img src="https://i.imgur.com/qv6Uu72.png" width="100%"/>
   <br>
   <sub>
     홈페이지의 메인 화면 모습이다. 수화를 접할 수 있는 다양한 메뉴들이 있다.
