@@ -143,9 +143,13 @@
 </table>
 <table align="center" border="0">
   <tr>
-    수화 인식은 
+    우리는 총 10개의 수화에 대해 각자 데이터셋을 만들었다. 
+    우리의 데이터는 mediapipe가 제공해주는 21개 손마디를 2개씩 조합하여 마디의 위치, 각도, 레이블이 담긴 numpy array이다.
+    이 데이터셋을 또 시간에 따라 겹치게 30장씩 합쳐서 새로운 데이터셋을 만들었다.
+    이후 각자의 데이터셋을 하나의 array로 합쳤다.
+    <br>
 <br><br>
-Below is a summary of the most commonly used routine components:
+아래는 우리의 수화 인식 모델 학습에 사용된 층이고 채택 이유이다:
 <ul>
   <li>
     <b><code>LSTM</code></b> 수화는 제스쳐로 이루어져있으므로 제스쳐를 인식하기 위해 우리는 데이터셋은 여러개의 Sequence로 만들었다(각 Sequence는 30프레임). 첫번째 LSTM층에 128유닛을 주어 우리의 데이터셋을 input을 받는다. 두번째 LSTM층은 64유닛을 주어 보다 input을 받은 값을 보다 정밀하게 학습한다. 
