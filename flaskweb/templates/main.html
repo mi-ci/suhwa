@@ -20,6 +20,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="box">
@@ -35,37 +36,65 @@
         <h1 class="f1"><div id="f4"></div></h1>
         <h1 class="f2">Player2</h1>
       </div>
+      <script>
+        $(document).ready(function () {
+          var score1t = document.getElementById("score1");
+          var score2t = document.getElementById("score2");
+          setInterval(function () {
+            $.ajax({
+              url: "/check_answer", // Replace with your server URL
+              type: "POST", // or 'POST' depending on your server setup
+              success: function (data) {
+                score1t.innerHTML = "SCORE: " + data.score1;
+                score2t.innerHTML = "SCORE: " + data.score2;
+                if (data.player1 == data.quiz) {
+                  history.go(0);
+                }
+                if (data.player2 == data.quiz) {
+                  history.go(0);
+                }
+              },
+            });
+          }, 1000); // Time in milliseconds (2000 ms = 2 seconds)
+        });
+
+        function countdown() {
+          var seconds = 60;
+          var timerDisplay = document.getElementById("f4");
+          var intervalId = setInterval(function () {
+            timerDisplay.innerHTML = "제한시간: " + seconds + "초";
+            seconds--;
+
+            if (seconds < 0) {
+              clearInterval(intervalId);
+              timerDisplay.innerHTML = "세션종료";
+              history.go(0);
+            }
+          }, 1000);
+        }
+        // Call the countdown function initially
+        countdown();
+
+        function refreshImage() {
+          var img = document.getElementById("videoframe"); // Get the image element
+          var src = img.src; // Get the current src
+          img.src = src + "?" + new Date().getTime(); // Append the current timestamp to the src to prevent caching
+        }
+
+        setInterval(refreshImage, 200); // Refresh the image every 2000 milliseconds (2 seconds)
+
+        // Reload the image every 100 milliseconds
+        // var img = document.getElementById("videoframe");
+        // setInterval(function () {
+        //   img.src = "/current_frame" + new Date().getTime();
+        // }, 1000);
+        var img2 = document.getElementById("videoframe2");
+        setInterval(function () {
+          img2.src = "/current_frame2" + new Date().getTime();
+        }, 1000);
+      </script>
       <div id="cam1">
         <img src="/current_frame" alt="Video stream" id="videoframe" />
-        <script>
-          function countdown() {
-            var seconds = 60;
-            var timerDisplay = document.getElementById("f4");
-            var intervalId = setInterval(function () {
-              timerDisplay.innerHTML = "제한시간: " + seconds + "초";
-              seconds--;
-
-              if (seconds < 0) {
-                clearInterval(intervalId);
-                timerDisplay.innerHTML = "세션종료";
-                history.go(0);
-              }
-            }, 1000);
-          }
-
-          // Call the countdown function initially
-          countdown();
-
-          // Reload the image every 100 milliseconds
-          var img = document.getElementById("videoframe");
-          setInterval(function () {
-            img.src = "/current_frame?" + new Date().getTime();
-          }, 1000);
-          var img2 = document.getElementById("videoframe2");
-          setInterval(function () {
-            img2.src = "/current_frame2?" + new Date().getTime();
-          }, 1000);
-        </script>
       </div>
 
       <div id="cam2">
@@ -73,21 +102,11 @@
       </div>
 
       <div id="footer" class="head">
-        <h1 class="f2">SCORE {{value2}}</h1>
+        <h1 class="f2" id="score1"></h1>
         <!--플레이어1 점수 -->
-        <h1 class="f2">SCORE {{value3}}</h1>
+        <h1 class="f2" id="score2"></h1>
         <!--플레이어2 점수 -->
       </div>
     </div>
-
-    <!--<h1>결과는?{{value1}}</h1>
-      <h1>결과는?{{value7}}</h1>
-      
-      
-      <h1>Player1정답은:{{value4}}</h1>
-      <h1>Player2정답은:{{value5}}</h1>
-      <h1>문제는:{{value6}}</h1>
-
-    <div id="fileContents"></div>-->
   </body>
 </html>
