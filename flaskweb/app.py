@@ -6,7 +6,9 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 import io
+import pymysql
 global score1, score2
+
 score1 = 0
 score2 = 0
 
@@ -167,6 +169,32 @@ def current_frame():
 def current_frame2():
     global last_frame2
     return Response(last_frame2, mimetype='image/jpeg')
+
+
+@app.route('/qna')
+def qna():
+    conn = pymysql.connect(host="localhost", port=3306, user="root", password='1234', db='project', charset='utf8')
+    cur = conn.cursor()
+    cur.execute("select * from qna order by no desc")
+    data = cur.fetchall()
+    print(type(data))
+    conn.commit()
+    conn.close()
+    return render_template("qna.html", rows=data)
+
+@app.route('/content', methods=['GET'])
+def content():
+
+    conn = pymysql.connect(host="localhost", port=3306, user="root", password='1234', db='project', charset='utf8')
+    cur = conn.cursor()
+    id = request.args.get('id')
+    cur.execute(f"select * from qna where no={id}")
+    data = cur.fetchall()
+    print(type(data))
+    conn.commit()
+    conn.close()
+    return render_template("content.html", content=data)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
