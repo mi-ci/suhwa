@@ -191,7 +191,7 @@
  <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
   
  ✌️ &emsp;  &nbsp;&nbsp;MBC아카데미 천호점 정현희쌤 아래서 만났습니다 <br/><br/>
- ❤️ &emsp; 인공지능을 사랑하는 5인입니다<br/><br/>
+ ❤️ &emsp; 인공지능을 사랑하는 6인입니다<br/><br/>
  📧 &emsp; 언제든 연락주세요: eybae1027@gmail.com<br/><br>
  💬 &emsp; 무엇이든 물어보세요 [here](https://github.com/mi-ci/suhwa/issues)
 
