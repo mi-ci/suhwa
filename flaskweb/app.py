@@ -68,6 +68,7 @@ def main():
     quiz = random.choice(quizlist)
     return render_template("main.html", value2=score1, value3=score2, value6=quiz)
 
+# =========================================여기서부터 정답비교==================================
 @app.route("/check_answer", methods=["POST"])
 def check_answer():
     global score1, score2, quiz
@@ -82,6 +83,7 @@ def check_answer():
     return jsonify({"score1": score1, "score2": score2, "quiz": quiz, "player1" : player1, "player2" : player2})
 
 
+# =========================================여기서부터 비디오==================================
 
 @app.route('/video_feed', methods=['POST'])
 def video_feed():
@@ -170,6 +172,7 @@ def current_frame2():
     global last_frame2
     return Response(last_frame2, mimetype='image/jpeg')
 
+# =========================================여기서부터 게시판==================================
 
 @app.route('/qna')
 def qna():
@@ -184,7 +187,6 @@ def qna():
 
 @app.route('/content', methods=['GET'])
 def content():
-
     conn = pymysql.connect(host="localhost", port=3306, user="root", password='1234', db='project', charset='utf8')
     cur = conn.cursor()
     id = request.args.get('id')

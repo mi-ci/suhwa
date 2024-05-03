@@ -51,7 +51,21 @@
         <!-- Text and Cam Section -->
         <div class="text-and-cam">
           <h1 class="f1"><따라해보기></h1>
-          <div class="cam"></div>
+          <div class="cam">
+            <div id="cam1">
+              <img src="/current_frame" alt="Video stream" id="videoframe" />
+            </div>
+
+            <script>
+              function refreshImage() {
+                var img = document.getElementById("videoframe"); // Get the image element
+                var src = img.src; // Get the current src
+                img.src = src + "?" + new Date().getTime(); // Append the current timestamp to the src to prevent caching
+              }
+
+              setInterval(refreshImage, 200);
+            </script>
+          </div>
           <h3 class="f1">⚠⚠손이 잘 보이게 카메라를 조정해주세요.⚠⚠</h3>
         </div>
       </div>
