@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Tourney:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href=" {{ url_for('static', filename='css/content.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>내용 :</h1>
-    <h2>{{content[0][2]}}</h2>
+    <h1 class="f2">&nbsp; >> Q&A</h1>
+    <div class="container f2 box" style="border-collapse: collapse">
+      <table>
+        <tr style="border: solid 1px black; height: 50px">
+          <td class="f2" style="border: solid 1px black; width: 50px">
+            &nbsp; {{content[0][0]}}
+          </td>
+          <td class="f2" style="border: solid 1px black; width: 900px">
+            {{content[0][1]}}
+          </td>
+          <td class="f2" style="width: 50px"><a href="./qna">X</a></td>
+        </tr>
+        <tr style="border: solid 1px black; height: 50px">
+          <td class="f2" style="width: 800px">
+            &nbsp; &nbsp; 작성자: {{content[0][3]}}
+          </td>
+        </tr>
+        <tr style="border: solid 1px black">
+          <td class="f2" style="width: 1000px; height: 500px">
+            {{content[0][2]}}
+          </td>
+        </tr>
+      </table>
+      <img src="{{ url_for('static', filename='image/hi.png') }}" />
+    </div>
   </body>
 </html>

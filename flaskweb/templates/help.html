@@ -26,6 +26,35 @@
       <div>
         <h1 class="f2">&nbsp; >> How To Play</h1>
       </div>
+      <div id="wrap">
+        <!-- Container 1 and Container 2 Wrap -->
+        <div class="containers">
+          <div class="Container1 box">
+            <div class="inner-box">
+              <h1 class="f1">제시 단어: 하트</h1>
+            </div>
+          </div>
+          <div class="container2">
+            <img
+              src="{{ url_for('static', filename='image/love.gif')}}"
+              id="icon1"
+            />
+            <img
+              src="{{ url_for('static', filename='image/video.gif')}}"
+              id="icon2"
+            />
+          </div>
+        </div>
+        <br />
+        <h3 class="f1">화면에 제시된 단어를 보고 수화로 정답을 맞춘다.</h3>
+        <br />
+        <!-- Text and Cam Section -->
+        <div class="text-and-cam">
+          <h1 class="f1"><따라해보기></h1>
+          <div class="cam"></div>
+          <h3 class="f1">⚠⚠손이 잘 보이게 카메라를 조정해주세요.⚠⚠</h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
