@@ -59,7 +59,11 @@ def words():
 
 @app.route("/help")
 def help():  
-    return render_template("help.html")     
+    return render_template("help.html")  
+   
+@app.route("/close")
+def close():  
+    return render_template("close.html")  
 
 @app.route("/main")
 def main():

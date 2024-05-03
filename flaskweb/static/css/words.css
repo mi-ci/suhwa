@@ -117,3 +117,37 @@
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
 }
+
+.special-link {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 50px;
+}
+
+.special-link::after {
+  content: "사이트로 이동하시겠습니까?";
+  color: rgb(75, 75, 75);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  left: 70px;
+  white-space: nowrap;
+  top: 100%;
+  margin-top: 5px;
+}
+
+.special-link:hover::after {
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* 테이블을 좌우에 배치 */
+}
+
+.bottom-right {
+  align-self: flex-end; /* 하단에 배치 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}

@@ -25,25 +25,6 @@
     a {
       color: black; /* 링크 색상 */
       text-decoration: none; /* 밑줄 없애기 */
-      transition: all 0.3s ease; /* 부드러운 전환 효과 */
-      position: relative; /* 가상 요소의 위치 기준 */
-      padding-left: 50px; /* 텍스트와 오른쪽 경계 사이의 간격 */
-    }
-    /* 가상 요소 초기 숨김 설정 */
-    a::after {
-      content: "사이트로 이동하시겠습니까?"; /* 추가할 텍스트 */
-      color: rgb(75, 75, 75); /* 텍스트 색상 */
-      opacity: 0; /* 초기에는 보이지 않음 */
-      transition: opacity 0.3s ease; /* 페이드 효과로 부드럽게 나타남 */
-      position: absolute; /* 절대 위치 */
-      left: 70px; /* 링크의 왼쪽 경계에서 시작 */
-      white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 */
-      top: 100%; /* 링크의 하단 아래 */
-      margin-top: 5px; /* 링크와 텍스트 사이의 간격 */
-    }
-    /* 링크에 마우스를 올렸을 때의 스타일 */
-    a:hover::after {
-      opacity: 1; /* 마우스 오버 시 화살표가 보이게 설정 */
     }
   </style>
   <body>
@@ -74,6 +55,7 @@
         <h1 class="f2">&nbsp; >> Words</h1>
         <h3 class="f1">
           <a
+            class="special-link"
             href="https://sldict.korean.go.kr/front/main/main.do"
             target="_blank"
             >«출처 - 국립국어원 학국수어사전»</a
@@ -212,6 +194,9 @@
               가위
             </button>
           </div>
+        </div>
+        <div class="bottom-right">
+          <a class="f2" href="./">>> Intro</a>
         </div>
       </div>
     </div>

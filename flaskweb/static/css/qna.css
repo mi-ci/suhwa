@@ -47,3 +47,13 @@
 table {
   margin: 0 auto;
 }
+
+.contain {
+  display: flex;
+  justify-content: space-between; /* 테이블을 좌우에 배치 */
+}
+
+.bottom-right {
+  align-self: flex-end; /* 하단에 배치 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}
