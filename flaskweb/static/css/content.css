@@ -15,3 +15,23 @@
 .box {
   border: solid 1px black;
 }
+
+.tr {
+  padding-top: 10px;
+}
+
+.first-column {
+  width: 10%; /* 첫 번째 열 너비 */
+}
+
+.second-column {
+  width: 80%; /* 두 번째 열 너비 */
+}
+
+.third-column {
+  width: 10%; /* 세 번째 열 너비 */
+}
+
+.full-width-table {
+  width: 100%; /* 테이블 전체 너비 */
+}
