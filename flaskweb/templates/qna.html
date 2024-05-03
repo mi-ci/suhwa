@@ -30,22 +30,24 @@
   <body>
     <h1 class="f2">&nbsp; >> Q&A</h1>
     <br />
-    <div class="container">
+    <div class="container" style="align-items: center">
       <table class="box">
-        <tr class="f3">
-          <td id="no">00</td>
-          <td id="title">제목 : OO 단어를 추가해주세요</td>
-          <td id="writer">작성자</td>
+        <tr class="f1">
+          <td id="no"><h1>00</h1></td>
+          <td id="title"><h1>제목 : OO 단어를 추가해주세요</h1></td>
+          <td id="writer"><h1>작성자</h1></td>
         </tr>
       </table>
       <table class="box">
         {% for row in rows %}
         <tr class="f1">
-          <td id="no">{{row[0]}}</td>
+          <td id="no"><h2>{{row[0]}}</h2></td>
           <td id="title">
-            <a href="../content?id={{row[0]}}">{{row[1]}}</a>
+            <h2>
+              <a href="../content?id={{row[0]}}">{{row[1]}}</a>
+            </h2>
           </td>
-          <td id="writer">{{row[3]}}</td>
+          <td id="writer"><h2>{{row[3]}}</h2></td>
         </tr>
         {% endfor %}
       </table>
