@@ -1,0 +1,100 @@
+/* Google Fonts */
+.f1 {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f2 {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  margin-top: 48px;
+}
+
+.container1 {
+  flex: 1; /* 두 컨테이너가 동등하게 공간을 차지하도록 설정 */
+  margin-right: 50px; /* container1과 container2 사이의 오른쪽 마진 추가 */
+}
+
+.container2 {
+  flex: 1; /* 두 컨테이너가 동등하게 공간을 차지하도록 설정 */
+  margin-left: 200px; /* container1과 container2 사이의 왼쪽 마진 추가 */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px; /* 높이 설정 */
+}
+
+.box {
+  height: 200px;
+  border: 15px solid transparent;
+  border-image: url("../image/coms.png") 30 stretch;
+  border-image-slice: 30 fill; /* fill 속성을 추가하여 보더 이미지가 내부 영역을 가리지 않도록 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; /* 내부 패딩 추가로 텍스트와 보더 간의 공간 확보 */
+}
+
+.inner-box {
+  width: 100%; /* 내부 박스의 너비를 100%로 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px; /* 높이 설정 */
+}
+
+#icon1,
+#icon2 {
+  max-width: 40%; /* 이미지 최대 너비를 조정 */
+  height: auto;
+}
+
+.text-and-cam {
+  text-align: center;
+  margin-top: 48px; /* 위쪽 마진으로 2줄 정도의 공간 생성 */
+}
+
+.cam {
+  width: 100%; /* 카메라 영역의 너비 설정 */
+  height: 300px; /* 카메라 영역의 높이 설정 */
+  background-color: #ccc; /* 임시 배경색 설정 */
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* 테이블을 좌우에 배치 */
+}
+
+.bottom-right {
+  align-self: flex-end; /* 하단에 배치 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}

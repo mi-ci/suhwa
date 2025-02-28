@@ -40,7 +40,37 @@
       a:hover::after {
         opacity: 1; /* 마우스 오버 시 화살표가 보이게 설정 */
       }
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        position: relative; /* 가상 요소의 위치 기준 */
+        padding-left: 50px;
+      }
+      button::after {
+        content: "►"; /* 오른쪽 화살표 문자 */
+        color: black; /* 화살표 색상 */
+        opacity: 0; /* 초기에는 보이지 않음 */
+        transition: opacity 0.3s ease; /* 부드러운 페이드 효과 */
+        position: absolute; /* 절대 위치 */
+        left: 0; /* 링크의 오른쪽 경계에서 시작 */
+        top: 0; /* 링크의 상단에 정렬 */
+      }
+      /* 링크에 마우스를 올렸을 때의 스타일 */
+      button:hover::after {
+        opacity: 1; /* 마우스 오버 시 화살표가 보이게 설정 */
+      }
     </style>
+    <script>
+      function closeWindow() {
+        if (confirm("창을 닫으시겠습니까?")) {
+          window.close();
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -53,7 +83,10 @@
         <h2 style="font-size: 50px"><a href="./main.html"> Start</a></h2>
         <h2 style="font-size: 50px"><a href="./help.html"> How To Play</a></h2>
         <h2 style="font-size: 50px"><a href="./words.html"> Words</a></h2>
-        <h2 style="font-size: 50px"><a href="./end.html"> Exit</a></h2>
+        <h2 style="font-size: 50px"><a href="./qna.html"> Q&A</a></h2>
+        <h2 style="font-size: 50px">
+          <button onclick="closeWindow()">Exit</button>
+        </h2>
       </div>
     </div>
   </body>

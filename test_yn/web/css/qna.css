@@ -1,0 +1,59 @@
+/* Google Fonts */
+.f1 {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f2 {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.f3 {
+  font-family: "Gaegu", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.box {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+#no {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+#title {
+  width: 600px;
+  height: 45px;
+  border: 1px solid black;
+  text-align: center;
+}
+#writer {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+}
+
+.contain {
+  display: flex;
+  justify-content: space-between; /* 테이블을 좌우에 배치 */
+}
+
+.bottom-right {
+  align-self: flex-end; /* 하단에 배치 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}

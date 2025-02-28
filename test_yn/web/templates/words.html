@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Tourney:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/words.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    a {
+      color: black; /* 링크 색상 */
+      text-decoration: none; /* 밑줄 없애기 */
+    }
+  </style>
+  <body>
+    <script>
+      function openPopup(url) {
+        var width = 600;
+        var height = 400;
+        // 화면 중앙에 위치시키기 위한 좌표 계산
+        var left = window.screenLeft + window.outerWidth / 2 - width / 2;
+        var top = window.screenTop + window.outerHeight / 2 - height / 2;
+
+        // 팝업 옵션 설정
+        var windowFeatures = `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`;
+
+        // 팝업 창 열기
+        var popup = window.open(url, "수화 상세 설명 페이지", windowFeatures);
+
+        // 팝업 차단 확인
+        if (!popup || popup.closed || typeof popup.closed == "undefined") {
+          alert(
+            "팝업 차단이 활성화되어 있습니다. 사이트의 팝업을 허용해주세요."
+          );
+        }
+      }
+    </script>
+    <div class="all">
+      <div class="text">
+        <h1 class="f2">&nbsp; >> Words</h1>
+        <h3 class="f1">
+          <a
+            class="special-link"
+            href="https://sldict.korean.go.kr/front/main/main.do"
+            target="_blank"
+            >«출처 - 국립국어원 학국수어사전»</a
+          >
+        </h3>
+      </div>
+      <div id="wrap">
+        <div class="words">
+          <div id="first">
+            <img src="../image/toilet.png" alt="화장실" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20190918/615444/MOV000237322_700X466.mp4')"
+            >
+              화장실
+            </button>
+          </div>
+          <div id="second">
+            <img src="../image/19.png" alt="19" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20220811/1009744/MOV000360041_700X466.mp4')"
+            >
+              19
+            </button>
+          </div>
+          <div id="third">
+            <img src="../image/controller.png" alt="리모컨" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20221018/1041784/MOV000360845_700X466.mp4')"
+            >
+              리모컨
+            </button>
+          </div>
+          <div id="four">
+            <img src="../image/hate.png" alt="싫다" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191029/632198/MOV000255246_700X466.mp4')"
+            >
+              싫다
+            </button>
+          </div>
+          <div id="five">
+            <img src="../image/mountain.png" alt="산" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('https://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191022/630027/MOV000254376_700X466.mp4')"
+            >
+              산
+            </button>
+          </div>
+          <div id="six">
+            <img src="../image/inssam.png" alt="인삼" width="129" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191021/629459/MOV000254637_700X466.mp4')"
+            >
+              인삼
+            </button>
+          </div>
+          <div id="seven">
+            <img src="../image/rainbow.png" alt="무지개" width="158" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20200824/734809/MOV000252677_700X466.mp4')"
+            >
+              무지개
+            </button>
+          </div>
+          <div id="eight">
+            <img src="../image/sometime.png" alt="가끔" width="144" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191029/632408/MOV000250331_700X466.mp4')"
+            >
+              가끔
+            </button>
+          </div>
+          <div id="nine">
+            <img src="../image/woman.png" alt="여자" width="120" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191028/631929/MOV000260440_700X466.mp4')"
+            >
+              여자
+            </button>
+          </div>
+          <div id="ten">
+            <img src="../image/vv.png" alt="가위" width="160" />
+            <button
+              class="button-style"
+              onclick="openPopup('http://sldict.korean.go.kr/multimedia/multimedia_files/convert/20191015/627636/MOV000249910_700X466.mp4')"
+            >
+              가위
+            </button>
+          </div>
+        </div>
+        <div class="bottom-right">
+          <a class="f2" href="./intro.html">>> Intro</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
